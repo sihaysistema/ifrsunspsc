@@ -30,7 +30,7 @@ def addlvl1(center):
         #for r in root_cost_center:
         #    frappe.msgprint(_(r.name))
         unspsc = frappe.new_doc("Cost Center")
-        unspsc.cost_center_name = 'UNSPSC'
+        unspsc.cost_center_name = 'UNSPSC-forma1'
         unspsc.parent_cost_center = root_cost_center[0]['name']
         unspsc.company = this_company
         unspsc.is_group = 1
@@ -38,7 +38,17 @@ def addlvl1(center):
         #unspsc.rgt = 4
         unspsc.old_parent = root_cost_center[0]['name']
         unspsc.save(ignore_permissions=True)
-   
+
+        #Forma #2, correcta de insertar documento.  Esto quiere decir que si cargamos un JSON, lo lee directo!
+        doc = {
+        'doctype': 'Cost Center',
+        'cost_center_name': 'UNSPSC-forma2',
+        'parent_cost_center': root_cost_center[0]['name'],
+        'company': this_company,
+        'is_group': 1,
+        }
+        logs = frappe.get_doc(doc)
+        logs.insert(ignore_permissions=True)
     except:
         frappe.msgprint(_('FAIL'))
     return 'hello'
