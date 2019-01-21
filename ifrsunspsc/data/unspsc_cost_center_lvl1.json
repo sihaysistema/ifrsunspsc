@@ -1,0 +1,20 @@
+[
+    {
+        "cost_center_name": "10.00.00.00 - Material Vivo Vegetal y Animal y Accesorios y Suministros",
+        "parent_cost_center": Null,
+        "company": Null,
+        "is_group": 1,
+        "lft": 5,
+        "rgt": 6,
+        "old_parent": Null,
+    },
+    {
+        "cost_center_name": "11.00.00.00 - Material Mineral y Textil y Vegetal y Animal No Comestible",
+        "parent_cost_center": Null,
+        "company": Null,
+        "is_group": 1,
+        "lft": 7,
+        "rgt": 8,
+        "old_parent": Null,
+    }
+]

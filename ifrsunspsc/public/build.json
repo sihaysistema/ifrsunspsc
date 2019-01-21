@@ -1,0 +1,5 @@
+{
+    "ifrsunspsc/js/ifrs.min.js": [
+        "public/js/ifrs.js"
+    ]
+}

@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ifrsunspsc *.css
+recursive-include ifrsunspsc *.csv
+recursive-include ifrsunspsc *.html
+recursive-include ifrsunspsc *.ico
+recursive-include ifrsunspsc *.js
+recursive-include ifrsunspsc *.json
+recursive-include ifrsunspsc *.md
+recursive-include ifrsunspsc *.png
+recursive-include ifrsunspsc *.py
+recursive-include ifrsunspsc *.svg
+recursive-include ifrsunspsc *.txt
+recursive-exclude ifrsunspsc *.pyc
